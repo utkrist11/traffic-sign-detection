@@ -65,7 +65,7 @@ void rgb_to_log_rb(const cv::Mat& rgbImage, std::vector< cv::Mat >& log_chromati
     {
         for (int i = iit*blockIter ; i < iit*(blockIter+1); i++) {
 
-            if(i>=rgbImage.rows)
+            if(i>rgbImage.rows)
             {
                 break;
             }
